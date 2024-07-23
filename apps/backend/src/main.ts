@@ -14,12 +14,12 @@ export function setupApp(app: INestApplication) {
 	app.useGlobalPipes(new ZodValidationPipe())
 	app.useGlobalInterceptors(new TransformInterceptor())
 	app.use(compression())
+	return app
 }
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule)
-	setupApp(app)
-	await app.listen(8080)
+	await setupApp(app).listen(8080)
 }
 
 bootstrap()
