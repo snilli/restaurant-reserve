@@ -5,7 +5,7 @@ import request from 'supertest'
 import { afterAll, beforeEach, describe, it, vi } from 'vitest'
 import { AppModule } from '../src/app.module'
 
-describe('ReserveTableController (e2e)', () => {
+describe('/v1/reserve-table (e2e)', () => {
 	let app: INestApplication
 	vi.useFakeTimers()
 	const date = new Date(2000, 1, 1, 13)
