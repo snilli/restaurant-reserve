@@ -1,0 +1,29 @@
+{
+	"$schema": "https://json.schemastore.org/swcrc",
+	"sourceMaps": false,
+	"module": {
+		"type": "commonjs",
+		"strict": false,
+		"strictMode": true,
+		"lazy": false,
+		"noInterop": false
+	},
+	"jsc": {
+		"target": "es2022",
+		"keepClassNames": false,
+		"parser": {
+			"syntax": "typescript",
+			"tsx": false,
+			"decorators": true,
+			"dynamicImport": true
+		},
+		"transform": {
+			"legacyDecorator": true,
+			"decoratorMetadata": true,
+			"useDefineForClassFields": false
+		},
+		"baseUrl": "./"
+	},
+	"isModule": true,
+	"minify": false
+}

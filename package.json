@@ -1,0 +1,29 @@
+{
+	"repository": "https://github.com/snilli/restaurant-reserve.git",
+	"license": "MIT",
+	"private": true,
+	"name": "restaurant-reserve-app",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"engines": {
+		"node": "20.x"
+	},
+	"scripts": {
+		"update:dep": "pnpm i --lockfile-only",
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"start": "turbo run start",
+		"lint": "turbo run lint",
+		"clean": "turbo run clean",
+		"clean-all": "turbo run clean-all"
+	},
+	"devDependencies": {
+		"eslint": "^8.57.0",
+		"eslint-config-turbo": "^2.0.9",
+		"eslint-plugin-turbo": "^2.0.9",
+		"turbo": "^2.0.9"
+	},
+	"packageManager": "pnpm@9.6.0"
+}
